@@ -140,19 +140,15 @@ header {
 
 .burger-card {
     min-width: 300px;
-    flex: 0 0 auto;
+    flex: 0 0 30%;  /* Ensures three cards fit in the visible area */
     text-align: center;
     background: #fff;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     scroll-snap-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
-.burger-card img {
-    max-width: 100%;
-    border-radius: 8px;
-}
 
 .order-btn {
     background: #c41e1e;
@@ -169,12 +165,44 @@ header {
     display: none;
 }
 
-.event-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    text-align: left;
+/* Flexbox Scrollable Container */
+.scroll-container {
+    display: flex;
+    gap: 20px; /* Space between burger cards */
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+
+
+/* Text Alignment */
+.burger-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5A2D0C;
+    margin-top: 10px;
+}
+.burger-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+/* Button Styling */
+.order-btn {
+    background-color: #D62828;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-btn:hover {
+    background-color: #9c1d1d;
 }
 
 .event-card h2 {
@@ -250,6 +278,14 @@ footer {
 }
 
 /* Footer Section */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+
+.footer-logo h3 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700; /* Adjust for boldness */
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+}
+
 .footer-section {
     background: url('../images/Footer BG.png') no-repeat center center;
     background-size: cover;
