@@ -44,14 +44,13 @@
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Left Side: Text -->
-                    <div class="col-lg-6 col-md-12 text-box text-start">
+                    <div class="col-lg-6 col-md-12 text-box text-start mb-5 mb-lg-0"> <!-- Added mb-5 -->
                         <p class="tagline">IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</p>
                         <h1 class="title">Burger <span class="highlight">Week</span></h1>
-                        <a href="#" class="btn btn-primary mt-3">Order Now</a>
                     </div>
-        
+            
                     <!-- Right Side: Image -->
-                    <div class="col-lg-6 col-md-12 text-center">
+                    <div class="col-lg-6 col-md-12 text-center ms-lg-auto ps-lg-5"> 
                         <img src="assets/images/burgir.png" alt="Special Burger" class="img-fluid" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
@@ -62,28 +61,48 @@
     
 <!-- Image Grid Section -->
 
-<section class="image-grid-section d-flex align-items-center">
+<section class="image-grid-section d-flex align-items-center my-5">
     <div class="container">
-        <div class="row align-items-center">
-            <!-- Left Side: Square Image -->
-            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-                <div class="square-box me-3"> 
-                    <img src="assets/images/L1.png" alt="Square Image" class="img-fluid h-100">
-                </div>
+      <div class="row align-items-center">
+        <!-- Left Side: Square Image -->
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+          <div
+            class="square-box position-relative text-overlay"
+            style="background-image: url('./assets/images/L1.png')"
+          >
+            <div class="text-content">
+              <div class="small-text">TRY IT TODAY</div>
+              <div class="main-text">MOST POPULAR BURGER</div>
             </div>
-
-            <!-- Right Side: Two Rectangular Images (Stacked) -->
-            <div class="col-lg-6 col-md-6 d-flex flex-column">
-                <div class="rect-box flex-fill">
-                    <img src="assets/images/sq1.png" alt="Rectangular Image 1" class="img-fluid">
-                </div>
-                <div class="rect-box flex-fill mt-2">
-                    <img src="assets/images/sq2.png" alt="Rectangular Image 2" class="img-fluid">
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="col-lg-6 col-md-6 d-flex flex-column">
+          <!-- First Rectangular Image with Text -->
+          <div
+            class="rect-box flex-fill position-relative text-overlay"
+            style="background-image: url('assets/images/sq1.png')"
+          >
+            <div class="text-content">
+              <div class="small-text">TRY IT TODAY</div>
+              <div class="main-text">MORE FUN<br />MORE TASTE</div>
+            </div>
+          </div>
+
+          <!-- Second Rectangular Image with Text -->
+          <div
+            class="rect-box flex-fill mt-4 position-relative text-overlay"
+            style="background-image: url('assets/images/sq2.png')"
+          >
+            <div class="text-content">
+              <div class="small-text">TRY IT TODAY</div>
+              <div class="main-text">FRESH & CHILI</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 <section class="text-center py-5">
     <div class="container">
@@ -169,39 +188,38 @@
     </div>
 </section>
 
-<section class="reservation-section py-5">
-    <div class="container">
-        <div class="text-center">
-            <h6 class="text-uppercase text-muted fw-bold">Reservation</h6>
-            <h2 class="fw-bold text-dark">Book Your Table</h2>
-        </div>
-        <form class="reservation-form mt-4">
-            <div class="row">
-                <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Name" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-6">
-                    <input type="date" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="time" class="form-control" required>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-6">
-                    <input type="number" class="form-control" placeholder="People" min="1" required>
-                </div>
-                <div class="col-md-6">
-                    <button type="submit" class="btn btn-danger w-100 fw-bold">Find a Table</button>
-                </div>
-            </div>
-        </form>
-    </div>
+<section style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        background: url('./assets/images/reservation.png') no-repeat center;
+        background-size: cover;
+        text-align: center;
+      ">
+  <div style="width: 100%; max-width: 500px;">
+    <h6 style="text-transform: uppercase; color: #4d2c1d; opacity: 0.9; font-size: 14px;">Reservation</h6>
+    <h2 style="font-weight: bold; color: #4d2c1d; font-size: 36px; font-family: 'Georgia', serif;">BOOK YOUR TABLE</h2>
+
+    <form style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; gap: 10px;">
+        <input type="text" placeholder="Name" required style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="email" placeholder="Email" required style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+      
+      <div style="display: flex; gap: 10px;">
+        <input type="date" required style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="time" required style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <input type="number" placeholder="People" required style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+        <button type="submit" style="flex: 1; padding: 12px; background: #d32f2f; color: white; border: none; font-weight: bold; cursor: pointer; border-radius: 5px; font-size: 16px; font-family: 'Georgia', serif;">
+          FIND A TABLE
+        </button>
+      </div>
+    </form>
+  </div>
 </section>
 
 <footer class="footer-section">
@@ -230,7 +248,6 @@
         </div>
     </div>
 </footer>
-
 
     </div>
 </section>
