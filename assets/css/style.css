@@ -6,11 +6,24 @@ header {
     width: 100%; /* Ensure full width */
 }
 
+h3, h4 {
+    color: darkbrown; /* You can adjust the color according to your branding */
+}
+
+h1 {
+    font-size: 300px;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
 .navbar-nav .nav-link {
     font-family: 'YourFontName', sans-serif; /* Use the actual font */
     font-size: 16px; /* Adjust as needed */
     font-weight: bold; /* Match the bold style */
-    color: #4e260f !important; /* Ensure dark text */
+    color: #91f9f9 !important; /* Ensure dark text */
     text-transform: uppercase; /* Match the uppercase look */
     letter-spacing: 1px; /* Adjust spacing */
 }
@@ -24,7 +37,7 @@ header {
 
 
 .hero-header {
-    background: url('../images/f div bg.jpg') no-repeat center center;
+    background: url('../images/blue.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh; /* Full screen height */
     display: flex;
@@ -44,16 +57,16 @@ header {
 
 
 .text-box {
-    max-width: 500px;
+    max-width: 800px;
     text-align: left; /* Align text to the left */
 }
 
 .tagline {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #5c3b1e;
-    border: 2px dashed #5c3b1e;
+    color: #91f9f9;
+    border: 3px dashed #91f9f9;
     padding: 5px 10px;
     display: inline-block;
 }
@@ -62,9 +75,9 @@ header {
     font-family: 'Luckiest Guy', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 64px;
+    font-size: 80px;
     font-weight: 900;
-    color: #4e260f;
+    color: #91f9f9;
     text-transform: uppercase;
 }
 
@@ -72,7 +85,7 @@ header {
     display: block; /* Moves "BURGER" to the next line */
     font-size: 48px;
     font-weight: 700;
-    color: #4e260f;
+    color: #91f9f9;
 }
 
 .image-grid-section {
@@ -257,13 +270,7 @@ body {
     color: red;
 }
 
-h1, h3, h4 {
-    color: darkbrown; /* You can adjust the color according to your branding */
-}
 
-h2 {
-    font-weight: bold;
-}
 
 footer {
     font-size: 14px;
